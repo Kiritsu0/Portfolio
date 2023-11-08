@@ -1,0 +1,409 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+#home {
+  height: 100vh;
+  background-color: #37484a;
+}
+#home #nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #243233;
+  position: fixed;
+  width: 100vw;
+  height: 70px;
+  z-index: 999;
+}
+#home #nav #welcome {
+  color: #eee;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+#home #nav .links {
+  padding: 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  margin-right: 15px;
+  z-index: 1;
+  position: relative;
+}
+#home #nav .links::before {
+  content: "";
+  background-color: transparent;
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.3s ease;
+}
+#home #nav .links:hover::before {
+  background-color: #3badab;
+  z-index: -1;
+  width: 100%;
+}
+#home .identification {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 10rem;
+  color: #eee;
+}
+#home .identification #image {
+  width: 500px;
+}
+#home .identification .paragraphs {
+  text-align: start;
+  font-family: Elephant;
+  width: 720px;
+  margin-top: 3rem;
+}
+#home .identification .paragraphs p {
+  font-size: 2.3rem;
+  margin: 0.5rem;
+  line-height: 4.3rem;
+}
+#home .identification .paragraphs #p2 {
+  margin-left: 4rem;
+}
+#home .identification .paragraphs #p3 {
+  margin-left: 8rem;
+}
+#home .identification .paragraphs .hovered-spans {
+  transition: 0.5s;
+  display: inline;
+  font-family: Cooper Black;
+  font-size: 3rem;
+  color: #3badab;
+  cursor: pointer;
+}
+#home .identification .paragraphs .hovered-spans:hover {
+  color: #243233;
+  font-size: 2.5rem;
+}
+#home .language-icons {
+  margin: 2rem 0 0 1rem;
+}
+#home .language-icons .programming-tools {
+  font-size: 3rem;
+  margin-left: 2rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#home .language-icons .programming-tools:hover {
+  filter: brightness(1.5);
+}
+#home .language-icons #js {
+  color: #d6d608;
+}
+#home .language-icons #react {
+  color: #3badab;
+}
+#home .language-icons #html {
+  color: #da3e06;
+}
+#home .language-icons #css {
+  color: #1616c4;
+}
+#home .language-icons #sass {
+  color: #f053e3;
+}
+#home .language-icons #python {
+  color: rgb(132, 155, 5);
+}
+
+#about {
+  height: 100vh;
+  background-color: #3f6a6e;
+}
+#about .header {
+  display: flex;
+  justify-content: center;
+  padding-top: 6rem;
+}
+#about .header .letter {
+  display: flex;
+  transition: 0.3s;
+  font-size: 3rem;
+  width: 40px;
+  height: 60px;
+  color: #3badab;
+  cursor: pointer;
+  filter: brightness(1);
+  animation: color 5s infinite;
+}
+#about .header .letter:hover {
+  font-size: 4rem;
+}
+@keyframes color {
+  0% {
+    filter: brightness(1.5);
+  }
+  20% {
+    filter: brightness(2);
+  }
+  40% {
+    filter: brightness(3);
+  }
+  60% {
+    filter: brightness(3.5);
+  }
+  80% {
+    filter: brightness(0.8);
+  }
+  100% {
+    filter: brightness(1.5);
+  }
+}
+#about .slides {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 2rem 0 0 auto;
+  padding: 2rem;
+  max-width: 80vw;
+  height: 50vh;
+}
+#about .slides .my-story {
+  background-color: #eee;
+  padding: 2rem;
+  max-width: 400px;
+  height: 250px;
+  border-radius: 10px;
+}
+#about .slides #slide-1 {
+  position: relative;
+  transition: 0.8s;
+  background-color: #37484a;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px 0 10px 0;
+  gap: 1rem;
+}
+#about .slides #slide-1 p {
+  margin: 0 15px 0 15px;
+  line-height: 1.5rem;
+}
+#about .slides #slide-2 {
+  position: relative;
+  transition: 0.8s;
+  background-color: #37484a;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px 0 10px 0;
+  gap: 1rem;
+}
+#about .slides #slide-2 p {
+  margin: 0 15px 0 15px;
+  line-height: 1.5rem;
+}
+#about .slides time {
+  font-weight: 800;
+  color: #557679;
+}
+#about .slide-buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 3rem;
+  margin: 3rem 12rem 0 0;
+}
+#about .slide-buttons .icons {
+  font-size: 2rem;
+  cursor: pointer;
+}
+#about .slide-buttons #highlight {
+  padding: 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border: none;
+  background-color: #3badab;
+}
+
+#projects {
+  height: 100vh;
+  background-color: #83a6ac;
+}
+#projects h1 {
+  text-align: center;
+  padding: 6rem;
+  font-size: 3rem;
+}
+#projects #projects-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+#projects #projects-list .project {
+  width: 28%;
+  height: 300px;
+  background-color: #eee;
+  border-radius: 10px;
+}
+#projects #projects-list .project .images {
+  width: 100%;
+  height: 80%;
+  cursor: pointer;
+  border-radius: 10px 10px 0 0;
+}
+#projects #projects-list #project-1 {
+  width: 28%;
+  height: 300px;
+  position: relative;
+}
+#projects #projects-list #project-1::before {
+  content: "Weather App";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: 800;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #3badab, rgba(73, 105, 107, 0.8274509804));
+  transition: 0.3s;
+  border-radius: 10px;
+}
+#projects #projects-list #project-1:hover::before {
+  background-color: transparent;
+  width: 0;
+  overflow: hidden;
+  opacity: 0;
+}
+#projects #projects-list #project-2 {
+  width: 28%;
+  height: 300px;
+  position: relative;
+}
+#projects #projects-list #project-2::before {
+  content: "Test App";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: 800;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #3badab, rgba(73, 105, 107, 0.8274509804));
+  transition: 0.3s;
+  border-radius: 10px;
+}
+#projects #projects-list #project-2:hover::before {
+  background-color: transparent;
+  width: 0;
+  overflow: hidden;
+  opacity: 0;
+}
+#projects #projects-list #project-3 {
+  width: 28%;
+  height: 300px;
+  position: relative;
+}
+#projects #projects-list #project-3::before {
+  content: "Drum Machine";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: 800;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #3badab, rgba(73, 105, 107, 0.8274509804));
+  transition: 0.3s;
+  border-radius: 10px;
+}
+#projects #projects-list #project-3:hover::before {
+  background-color: transparent;
+  width: 0;
+  overflow: hidden;
+  opacity: 0;
+}
+#projects #projects-list .github-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  cursor: pointer;
+  width: 2rem;
+  margin: 0 auto;
+  color: rgb(62, 87, 87);
+}
+
+#contacts {
+  height: 100vh;
+  background-color: #1b1a1a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  color: #eee;
+}
+#contacts h1 {
+  font-size: 3rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#contacts h1 span {
+  color: #3badab;
+  transition: 0.3s;
+}
+#contacts h1:hover {
+  color: #3badab;
+}
+#contacts h1:hover span {
+  color: #eee;
+}
+#contacts .my-contact {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #bac9c9;
+  align-self: flex-start;
+  margin-left: 7rem;
+  transition: 0.3s;
+}
+#contacts .my-contact:hover {
+  color: #3badab;
+}
+#contacts .my-contact:hover span {
+  color: #eee;
+}
+#contacts .contact-icons {
+  font-size: 3rem;
+  color: #3badab;
+  margin-right: 1rem;
+}
+#contacts .icons {
+  align-self: flex-end;
+}
+#contacts #media {
+  font-size: 2rem;
+  margin-right: 5rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#contacts #media:hover {
+  color: #eee;
+}/*# sourceMappingURL=main.css.map */

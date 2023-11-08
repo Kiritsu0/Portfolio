@@ -1,0 +1,479 @@
+$height: 100vh;
+$projectColor: linear-gradient(to right, #3badab, #49696bd3);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+#home {
+    height: $height;
+    background-color: #37484a;
+
+    & #nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #243233;
+        position: fixed;
+        width: 100vw;
+        height: 70px;
+        z-index: 999;
+
+        & #welcome {
+            color: #eee;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+
+        & .links {
+            padding: 20px;
+            color: white;
+            text-decoration: none;
+            font-size: 1.5rem;
+            margin-right: 15px;
+            z-index: 1;
+            position: relative;
+
+            &::before {
+                content: "";
+                background-color: transparent;
+                width: 0;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                transition: 0.3s ease;
+            }
+
+            &:hover::before {
+                background-color: #3badab;
+                z-index: -1;
+                width: 100%;
+            }
+        }
+    }
+
+
+    & .identification {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 10rem;
+        color: #eee;
+
+        & #image {
+            width: 500px;
+        }
+
+        & .paragraphs {
+            text-align: start;
+            font-family: Elephant;
+            width: 720px;
+            margin-top: 3rem;
+
+            & p {
+                font-size: 2.3rem;
+                margin: 0.5rem;
+                line-height: 4.3rem;
+            }
+
+            & #p2 {
+                margin-left: 4rem;
+            }
+
+            & #p3 {
+                margin-left: 8rem;
+            }
+
+            & .hovered-spans {
+                transition: 0.5s;
+                display: inline;
+                font-family: Cooper Black;
+                font-size: 3rem;
+                color: #3badab;
+                cursor: pointer;
+            }
+
+            & .hovered-spans:hover {
+                color:  #243233;
+                font-size: 2.5rem;
+            }
+        }
+    }
+
+    .language-icons {
+        margin: 2rem 0 0 1rem;
+
+        & .programming-tools {
+            font-size: 3rem;
+            margin-left: 2rem;
+            cursor: pointer;
+            transition: 0.3s;
+
+            &:hover {
+                filter: brightness(1.5)
+            }
+        }
+
+        #js {
+            color: #d6d608;
+        }
+
+        #react {
+            color: #3badab;
+        }
+
+        #html {
+            color: #da3e06
+        }
+
+        #css {
+            color: #1616c4;
+        }
+
+        #sass {
+            color: #f053e3;
+        }
+
+        #python {
+            color: rgb(132, 155, 5)
+        }
+    }
+
+}
+
+#about {
+    height: $height;
+    background-color: #3f6a6e;
+
+    & .header {
+        display: flex;
+        justify-content: center;
+        padding-top: 6rem;
+
+        & .letter {
+            display: flex;
+            transition: 0.3s;
+            font-size: 3rem;
+            width: 40px;
+            height: 60px;
+            color: #3badab;
+            cursor: pointer;
+            filter: brightness(1);
+            animation: color 5s infinite;
+
+            &:hover {
+                font-size: 4rem;
+            }
+        }
+
+        @keyframes color {
+            0% {
+                filter: brightness(1.5);
+            }
+
+            20% {
+                filter: brightness(2);
+            }
+            
+            40% {
+                filter: brightness(3);
+            }
+            
+            60% {
+                filter: brightness(3.5);
+            }
+            
+            80% {
+                filter: brightness(0.8);
+            }
+
+            100% {
+                filter: brightness(1.5);
+            }
+        }
+    }
+
+    & .slides {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        margin: 2rem 0 0 auto;
+        padding: 2rem;
+        max-width: 80vw;
+        height: 50vh;
+
+        & .my-story {
+            background-color: #eee;
+            padding: 2rem;
+            max-width: 400px;
+            height: 250px;
+            border-radius: 10px;
+        }
+
+        & #slide-1 {
+            position: relative;
+            transition: 0.8s;
+            background-color: #37484a;
+            overflow: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 5px 0 10px 0;
+            gap: 1rem;
+
+            & p {
+                margin: 0 15px 0 15px;
+                line-height: 1.5rem;
+            }
+        }
+
+        & #slide-2 {
+            position: relative;
+            transition: 0.8s;
+            background-color: #37484a;
+            overflow: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 5px 0 10px 0;
+            gap: 1rem;
+
+            & p {
+                margin: 0 15px 0 15px;
+                line-height: 1.5rem;
+            }
+        }
+
+        time {
+            font-weight: 800;
+            color: #557679;
+        }
+    }
+
+    & .slide-buttons {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 3rem;
+        margin: 3rem 12rem 0 0;
+
+        & .icons {
+            font-size: 2rem;
+            cursor: pointer;
+        }
+
+        & #highlight {
+            padding: 8px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border: none;
+            background-color: #3badab;
+        }
+    }
+}
+
+#projects {
+    height: $height;
+    background-color: #83a6ac;
+
+    & h1 {
+        text-align: center;
+        padding: 6rem;
+        font-size: 3rem;
+    }
+
+    & #projects-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+
+        & .project {
+            width: 28%;
+            height: 300px;
+            background-color: #eee;
+            border-radius: 10px;
+
+            & .images {
+                width: 100%;
+                height: 80%;
+                cursor: pointer;
+                border-radius: 10px 10px 0 0;
+
+            }
+        }
+
+        & #project-1 {
+            width: 28%;
+            height: 300px;
+            position: relative;
+
+            &::before {
+                content: "Weather App";
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 1.4rem;
+                font-weight: 800;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: $projectColor;
+                transition: 0.3s;
+                border-radius: 10px;
+            }
+
+            &:hover::before {
+                background-color: transparent;
+                width: 0;
+                overflow: hidden;
+                opacity: 0;
+            }
+        }
+
+        & #project-2 {
+            width: 28%;
+            height: 300px;
+            position: relative;
+
+            &::before {
+                content: "Test App";
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 1.4rem;
+                font-weight: 800;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: $projectColor;
+                transition: 0.3s;
+                border-radius: 10px;
+            }
+
+            &:hover::before {
+                background-color: transparent;
+                width: 0;
+                overflow: hidden;
+                opacity: 0;
+            }
+        }
+
+        & #project-3 {
+            width: 28%;
+            height: 300px;
+            position: relative;
+
+            &::before {
+                content: "Drum Machine";
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 1.4rem;
+                font-weight: 800;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: $projectColor;
+                transition: 0.3s;
+                border-radius: 10px;
+            }
+
+            &:hover::before {
+                background-color: transparent;
+                width: 0;
+                overflow: hidden;
+                opacity: 0;
+            }
+        }
+
+        .github-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            cursor: pointer;
+            width: 2rem;
+            margin: 0 auto;
+            color: rgb(62, 87, 87);
+        }
+    }
+}
+
+#contacts {
+    height: $height;
+    background-color: #1b1a1a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    color: #eee;
+
+    & h1 {
+        font-size: 3rem;
+        cursor: pointer;
+        transition: 0.3s;
+
+        & span {
+            color: #3badab;
+            transition: 0.3s;
+        }
+
+        &:hover {
+            color: #3badab;
+            & span {
+                color: #eee;
+            }
+        }
+    }
+
+    .my-contact {
+        text-decoration: none;
+        font-size: 1.5rem;
+        color: #bac9c9;
+        align-self: flex-start;
+        margin-left: 7rem;
+        transition: 0.3s;
+
+        &:hover {
+            color: #3badab;
+            & span {
+                color: #eee;
+            }
+        }
+    }
+
+    & .contact-icons {
+        font-size: 3rem;
+        color: #3badab;
+        margin-right: 1rem;
+    }
+
+    .icons {
+        align-self: flex-end;
+    }
+
+    #media {
+        font-size: 2rem;
+        margin-right: 5rem;
+        cursor: pointer;
+        transition: 0.3s;
+
+        &:hover {
+            color: #eee;
+        }
+    }
+}
