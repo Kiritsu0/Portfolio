@@ -79,8 +79,8 @@ function App() {
         </div>
 
         <div className="slides">
-          <div className='my-story' id="slide-1" style={{minWidth: condition ? "500px" : "400px", height: condition ? "270px": "",
-           boxShadow: condition ? "0px 0px 10px 5px black" : "", zIndex: condition ? "1" : "0", left: condition ? "0" : "23rem",
+          <div className='my-story' id="slide-1" style={{width: condition ? "55%" : "50%", height: condition ? "270px": "",
+           boxShadow: condition ? "0px 0px 10px 5px black" : "", zIndex: condition ? "1" : "0", left: condition ? "0%" : "34%",
             filter: condition ? "brightness()" : "brightness(0.7)", opacity: condition ? "" : "0.5", pointerEvents: condition ? "": "none"}}>
             <div>
             <h1>First Year</h1>
@@ -109,9 +109,9 @@ function App() {
               with the realization that I still had much to achieve on my path to success.</mark>
             </p>
           </div>
-          <div className='my-story' id="slide-2" style={{right: condition ? "10rem" : "27rem",
+          <div className='my-story' id="slide-2" style={{left: condition ? "-20%" : "-49%",
           filter: condition ? "brightness(0.7)" : "brightness()", opacity: condition ? "0.5" : "", 
-          minWidth: condition ? "400px" : "500px", height: condition ? "" : "270px", boxShadow: condition ? "" : "0px 0px 10px 5px black",
+          width: condition ? "50%" : "55%", height: condition ? "" : "270px", boxShadow: condition ? "" : "0px 0px 10px 5px black",
           zIndex: condition ? "0" : "1", pointerEvents: condition ? "none": ""}}>
             <h1>Second Year</h1>
             <p>
@@ -148,15 +148,15 @@ function App() {
         <h1>Projects</h1>
             <div id='projects-list'>
               <div className='project' id="project-1">
-              <a href='https://kiritsu0.github.io/React-Weather-App/' target='_blank'><img className="images" id='weather-image' src="weather_project.png" alt="weather project"></img></a>
+              <a href='https://kiritsu0.github.io/React-Weather-App/' target='_blank'><img className="images" id='weather-image' src={process.env.PUBLIC_URL + "/weather_project.png"} alt="weather project"></img></a>
               <a className='github-icon' href='https://github.com/Kiritsu0/React-Weather-App' target='_blank'><span><FaGithub /></span></a>
               </div>
               <div className='project' id="project-2">
-                <a href='https://kiritsu0.github.io/React-Quiz-App/' target='_blank'><img className="images" id='test-image' src="test_project.png" alt="test project"></img></a>
+                <a href='https://kiritsu0.github.io/React-Quiz-App/' target='_blank'><img className="images" id='test-image' src={process.env.PUBLIC_URL + "/test_project.png"} alt="test project"></img></a>
                 <a className='github-icon' href='https://github.com/Kiritsu0/React-Quiz-App' target='_blank'><span><FaGithub /></span></a>
               </div>
               <div className='project' id="project-3">
-                <a href='https://kiritsu0.github.io/React-Drum-Machine/' target='_blank'><img className="images" id='drum-image' src="drum_project.png" alt="drum machine project"></img></a>
+                <a href='https://kiritsu0.github.io/React-Drum-Machine/' target='_blank'><img className="images" id='drum-image' src={process.env.PUBLIC_URL + "/drum_project.png"} alt="drum machine project"></img></a>
                 <a className='github-icon' href='https://github.com/Kiritsu0/React-Drum-Machine' target='_blank'><span><FaGithub /></span></a>
               </div>
             </div>
