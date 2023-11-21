@@ -56,8 +56,8 @@ function App() {
           <img id="image-1" src={process.env.PUBLIC_URL + '/image-1.jpg'} />
           <div className="paragraphs">
             <p id="p1">Hi,</p>
-            <p id="p2">I,M <p className="hovered-spans">Hussein</p>  <p className="hovered-spans">Deeb</p></p>
-            <p id="p3">a <p className="hovered-spans">Front-End</p>  <p className="hovered-spans">Developer</p></p>
+            <p id="p2">I,M <p className="hovered-spans">Hussein</p> <p className="hovered-spans">Deeb</p></p>
+            <p id="p3">a <p className="hovered-spans">Front-End</p> <p className="hovered-spans">Developer</p></p>
           </div>
         </div>
         <div className='language-icons'>
