@@ -639,7 +639,7 @@ $p3_marginL, $hovered_spans_size, $hovered_spans_hover) {
 }
 
 @media (max-width: 430px){
-    @include media(0.4rem, 0.2rem, 1px, 8rem, 130px, 0.8rem, 0.6rem, 1rem, 0.8rem, 0.8rem, 0.9rem, 0.8rem);
+    @include media(0.4rem, 0.4rem, 1px, 8rem, 130px, 0.8rem, 0.6rem, 1rem, 0.8rem, 0.8rem, 0.9rem, 0.8rem);
     #home {
         #nav {
             & .links {
