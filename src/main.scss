@@ -9,6 +9,14 @@ $project-fontsize-before: 1.4rem;
     scroll-behavior: smooth;
 }
 
+// ::-webkit-scrollbar {
+//     // width: 50px;
+// }
+
+// ::-webkit-scrollbar {
+//     color: #9b1111;
+//   }
+
 #home {
     height: $height;
     background-color: #37484a;
@@ -69,6 +77,7 @@ $project-fontsize-before: 1.4rem;
         & #image-1 {
             width: 500px;
             margin-left: 1rem;
+            box-shadow: 0px 0px 0px 10px #eee;
         }
 
         & .paragraphs {
@@ -238,6 +247,7 @@ $project-fontsize-before: 1.4rem;
             position: relative;
             transition: 0.8s;
             background-color: #37484a;
+            color: #eee;
             overflow: auto;
             display: flex;
             flex-direction: column;
@@ -248,6 +258,24 @@ $project-fontsize-before: 1.4rem;
             & p {
                 margin: 0 15px 0 15px;
                 line-height: 1.5rem;
+            }
+            
+            &::-webkit-scrollbar {
+                width: 5px;
+            }
+            
+            &::-webkit-scrollbar-thumb {
+                background-color: #369199;
+                border-radius: 15px;
+                width: 5px;
+            }
+            
+            &::-webkit-scrollbar-track {
+                background-color: transparent;
+            }
+
+            &::-webkit-scrollbar {
+                width: 5px;
             }
         }
 
@@ -255,6 +283,7 @@ $project-fontsize-before: 1.4rem;
             position: relative;
             transition: 0.8s;
             background-color: #37484a;
+            color: #eee;
             overflow: auto;
             display: flex;
             flex-direction: column;
@@ -266,11 +295,32 @@ $project-fontsize-before: 1.4rem;
                 margin: 0 15px 0 15px;
                 line-height: 1.5rem;
             }
+            
+            &::-webkit-scrollbar {
+                width: 5px;
+            }
+            
+            &::-webkit-scrollbar-thumb {
+                background-color: #369199;
+                border-radius: 15px;
+                width: 5px;
+            }
+            
+            &::-webkit-scrollbar-track {
+                background-color: transparent;
+            }
+
+            &::-webkit-scrollbar {
+                width: 5px;
+            }
         }
 
         time {
             font-weight: 800;
-            color: #557679;
+            color: #369199;
+        }
+        mark {
+            color: #eee;
         }
     }
 
