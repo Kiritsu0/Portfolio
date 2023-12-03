@@ -60,7 +60,8 @@
 #home .identification #image-1 {
   width: 500px;
   margin-left: 1rem;
-  box-shadow: 0px 0px 0px 10px #eee;
+  margin-right: 0.3em;
+  box-shadow: 0px 0px 0px 0.5em #eee;
 }
 #home .identification .paragraphs {
   text-align: start;
