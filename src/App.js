@@ -168,7 +168,7 @@ function App() {
         <a href='tel:+16477995004' className='my-contact'><span className='contact-icons'><FaPhoneAlt /></span> +1 (647) 799-5004</a>
         <div className='icons'>
           <a href="https://github.com/Kiritsu0" className='contact-icons' id='media' target='_blank'><FaGithub /></a>
-          <a href="https://www.linkedin.com/in/hussein-deeb-373798276/" className='contact-icons' id='media' target='_blank'><FaLinkedin /></a>
+          <a href="https://www.linkedin.com/in/hussein-deeb0/" className='contact-icons' id='media' target='_blank'><FaLinkedin /></a>
           <a href="https://twitter.com/KIRITSU295053" className='contact-icons' id='media' target='_blank'><FaSquareXTwitter /></a>
         </div>
       </div>
