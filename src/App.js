@@ -164,7 +164,7 @@ function App() {
 
       <div id='contacts'>
         <h1>Contact <span>Me</span></h1>
-        <a href='mailto:deebh776@gmail.com' className='my-contact'><span className='contact-icons'><HiOutlineMail /></span> deebh776@gmail.com</a>
+        <a href='mailto:husseindeeb162@gmail.com' className='my-contact'><span className='contact-icons'><HiOutlineMail /></span> deebh776@gmail.com</a>
         <a href='tel:+16477995004' className='my-contact'><span className='contact-icons'><FaPhoneAlt /></span> +1 (647) 799-5004</a>
         <div className='icons'>
           <a href="https://github.com/Kiritsu0" className='contact-icons' id='media' target='_blank'><FaGithub /></a>
