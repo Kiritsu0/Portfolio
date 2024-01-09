@@ -54,7 +54,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-top: 10rem;
+  padding-top: 9rem;
   color: #eee;
 }
 #home .identification #image-1 {
@@ -93,7 +93,8 @@
   font-size: 2.5rem;
 }
 #home .language-icons {
-  margin: 0.5rem 0 0 1rem;
+  margin-left: 1rem;
+  max-width: 30rem;
 }
 #home .language-icons .programming-tools {
   font-size: 3rem;
@@ -121,6 +122,12 @@
 }
 #home .language-icons #python {
   color: rgb(132, 155, 5);
+}
+#home .language-icons #tailwind {
+  color: #369199;
+}
+#home .language-icons #next {
+  color: #1b1a1a;
 }
 #home .download {
   text-decoration: none;

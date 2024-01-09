@@ -71,7 +71,7 @@ $project-fontsize-before: 1.4rem;
         display: flex;
         justify-content: space-around;
         align-items: center;
-        padding-top: 10rem;
+        padding-top: 9rem;
         color: #eee;
 
         & #image-1 {
@@ -118,7 +118,8 @@ $project-fontsize-before: 1.4rem;
     }
 
     .language-icons {
-        margin: 0.5rem 0 0 1rem;
+        margin-left: 1rem;
+        max-width: 30rem;
 
         & .programming-tools {
             font-size: 3rem;
@@ -153,6 +154,14 @@ $project-fontsize-before: 1.4rem;
 
         #python {
             color: rgb(132, 155, 5)
+        }
+
+        #tailwind {
+            color: #369199;
+        }
+
+        #next {
+            color:#1b1a1a;
         }
     }
     .download {

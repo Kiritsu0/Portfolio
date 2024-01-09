@@ -1,16 +1,18 @@
-import {useState} from 'react'
-import {GrLinkNext} from 'react-icons/gr'
-import {FaGithub} from 'react-icons/fa'
-import {HiOutlineMail} from 'react-icons/hi'
-import {FaPhoneAlt} from 'react-icons/fa'
-import {FaLinkedin} from 'react-icons/fa'
-import {FaSquareXTwitter} from 'react-icons/fa6'
-import {BiLogoJavascript} from 'react-icons/bi'
-import {BiLogoReact} from 'react-icons/bi'
-import {BiLogoHtml5} from 'react-icons/bi'
-import {BiLogoCss3} from 'react-icons/bi'
-import {BiLogoSass} from 'react-icons/bi'
-import {BiLogoPython} from 'react-icons/bi'
+import {useState} from 'react';
+import {GrLinkNext} from 'react-icons/gr';
+import {FaGithub} from 'react-icons/fa';
+import {HiOutlineMail} from 'react-icons/hi';
+import {FaPhoneAlt} from 'react-icons/fa';
+import {FaLinkedin} from 'react-icons/fa';
+import {FaSquareXTwitter} from 'react-icons/fa6';
+import {BiLogoJavascript} from 'react-icons/bi';
+import {BiLogoReact} from 'react-icons/bi';
+import {BiLogoHtml5} from 'react-icons/bi';
+import {BiLogoCss3} from 'react-icons/bi';
+import {BiLogoSass} from 'react-icons/bi';
+import {BiLogoPython} from 'react-icons/bi';
+import { BiLogoTailwindCss } from "react-icons/bi";
+import { TbBrandNextjs } from "react-icons/tb";
 
 function App() {
   const [condition, setCondition] = useState(true)
@@ -62,8 +64,10 @@ function App() {
           </div>
         </div>
         <div className='language-icons'>
-          <span className="programming-tools" id="js"><BiLogoJavascript /></span>
+          <span className="programming-tools" id="next"><TbBrandNextjs /></span>
           <span className="programming-tools" id="react"><BiLogoReact /></span>
+          <span className="programming-tools" id="js"><BiLogoJavascript /></span>
+          <span className="programming-tools" id="tailwind"><BiLogoTailwindCss /></span>
           <span className="programming-tools" id="html"><BiLogoHtml5 /></span>
           <span className="programming-tools" id="css"><BiLogoCss3 /></span>
           <span className="programming-tools" id="sass"><BiLogoSass /></span>
@@ -164,7 +168,7 @@ function App() {
 
       <div id='contacts'>
         <h1>Contact <span>Me</span></h1>
-        <a href='mailto:husseindeeb162@gmail.com' className='my-contact'><span className='contact-icons'><HiOutlineMail /></span> deebh776@gmail.com</a>
+        <a href='mailto:husseindeeb162@gmail.com' className='my-contact'><span className='contact-icons'><HiOutlineMail /></span> husseindeeb162@gmail.com</a>
         <a href='tel:+16477995004' className='my-contact'><span className='contact-icons'><FaPhoneAlt /></span> +1 (647) 799-5004</a>
         <div className='icons'>
           <a href="https://github.com/Kiritsu0" className='contact-icons' id='media' target='_blank'><FaGithub /></a>
