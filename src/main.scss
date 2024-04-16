@@ -12,7 +12,6 @@ $project-fontsize-before: 1.4rem;
 #home {
   min-height: $height;
   background-color: #37484a;
-  overflow: hidden;
 
   & #nav {
     display: flex;
@@ -33,7 +32,6 @@ $project-fontsize-before: 1.4rem;
 
     & #menu {
       font-size: 1.5rem;
-
     }
 
     & .links {
@@ -66,36 +64,31 @@ $project-fontsize-before: 1.4rem;
 
   & .identification {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    gap: 3rem;
     align-items: center;
     padding-top: 9rem;
     color: #eee;
 
     & #image-1 {
-      width: 500px;
-      margin-left: 1rem;
-      margin-right: 0.3em;
+      width: 30%;
       box-shadow: 0px 0px 0px 0.5em #eee;
+      margin-left: 3rem;
     }
 
     & .paragraphs {
       text-align: start;
       font-family: Elephant;
-      width: 720px;
-      margin-top: 3rem;
-
-      & p {
-        font-size: 2.3rem;
-        margin: 0.2rem;
-        line-height: 4.3rem;
-      }
+      min-width: 680px;
+      font-size: 2.3rem;
+      line-height: 4.3rem;
 
       & #p2 {
-        margin-left: 4rem;
+        margin-left: 2rem;
       }
 
       & #p3 {
-        margin-left: 8rem;
+        margin-left: 4rem;
       }
 
       & .hovered-spans {
@@ -566,6 +559,31 @@ $project-fontsize-before: 1.4rem;
         margin-right: 2px;
       }
     }
+
+    & .identification {
+      gap: 2rem;
+      & .paragraphs {
+        font-size: 1.8rem;
+        line-height: 3.3rem;
+        min-width: 580px;
+
+        & #p2 {
+          margin-left: 0;
+        }
+
+        & #p3 {
+          margin-left: 0;
+        }
+
+        & .hovered-spans {
+          font-size: 2.5rem;
+        }
+
+        & .hovered-spans:hover {
+          font-size: 2rem;
+        }
+      }
+    }
   }
 }
 
@@ -580,14 +598,40 @@ $project-fontsize-before: 1.4rem;
 
       & #menu {
         display: flex;
-        gap: 7px;
-        justify-content: space-between;
+        justify-content: space-around;
         font-size: 0.8rem;
+        width: 100%;
       }
 
       & .links {
-        margin-right: 5px;
+        margin-right: 0px;
         padding: 20px 5px;
+      }
+    }
+
+    & .identification {
+      flex-direction: column;
+      align-items: center;
+
+      & #image-1 {
+        width: 250px;
+        margin-left: 0;
+      }
+      & .paragraphs {
+        font-size: 1.4rem;
+        min-width: 480px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        & .hovered-spans {
+          font-size: 1.5rem;
+        }
+
+        & .hovered-spans:hover {
+          font-size: 1.2rem;
+        }
       }
     }
   }

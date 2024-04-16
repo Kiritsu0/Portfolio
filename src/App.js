@@ -67,19 +67,19 @@ function App() {
           <div className="paragraphs">
             <p id="p1">Hi,</p>
             <p id="p2">
-              I,M <p className="hovered-spans">Hussein</p>{" "}
+              I'M <p className="hovered-spans">Hussein</p>{" "}
               <p className="hovered-spans">Deeb</p>
             </p>
             <p id="p3">
               a <p className="hovered-spans">Front-End</p>{" "}
               <p className="hovered-spans">Developer</p>
             </p>
-            <a href="/Portfolio/Resume.docx" download className="download">
-              Download CV
-            </a>
           </div>
         </div>
         <div className="language-icons">
+          <a href="/Portfolio/Resume.docx" download className="download">
+              Download CV
+          </a>
           <span className="programming-tools" id="next">
             <TbBrandNextjs />
           </span>

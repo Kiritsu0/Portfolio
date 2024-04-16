@@ -8,7 +8,6 @@
 #home {
   min-height: 100dvh;
   background-color: #37484a;
-  overflow: hidden;
 }
 #home #nav {
   display: flex;
@@ -55,33 +54,29 @@
 }
 #home .identification {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  gap: 3rem;
   align-items: center;
   padding-top: 9rem;
   color: #eee;
 }
 #home .identification #image-1 {
-  width: 500px;
-  margin-left: 1rem;
-  margin-right: 0.3em;
+  width: 30%;
   box-shadow: 0px 0px 0px 0.5em #eee;
+  margin-left: 3rem;
 }
 #home .identification .paragraphs {
   text-align: start;
   font-family: Elephant;
-  width: 720px;
-  margin-top: 3rem;
-}
-#home .identification .paragraphs p {
+  min-width: 680px;
   font-size: 2.3rem;
-  margin: 0.2rem;
   line-height: 4.3rem;
 }
 #home .identification .paragraphs #p2 {
-  margin-left: 4rem;
+  margin-left: 2rem;
 }
 #home .identification .paragraphs #p3 {
-  margin-left: 8rem;
+  margin-left: 4rem;
 }
 #home .identification .paragraphs .hovered-spans {
   transition: 0.5s;
@@ -481,6 +476,26 @@
     font-size: 1.2rem;
     margin-right: 2px;
   }
+  #home .identification {
+    gap: 2rem;
+  }
+  #home .identification .paragraphs {
+    font-size: 1.8rem;
+    line-height: 3.3rem;
+    min-width: 580px;
+  }
+  #home .identification .paragraphs #p2 {
+    margin-left: 0;
+  }
+  #home .identification .paragraphs #p3 {
+    margin-left: 0;
+  }
+  #home .identification .paragraphs .hovered-spans {
+    font-size: 2.5rem;
+  }
+  #home .identification .paragraphs .hovered-spans:hover {
+    font-size: 2rem;
+  }
 }
 @media (max-width: 768px) {
   #home #nav {
@@ -491,12 +506,34 @@
   }
   #home #nav #menu {
     display: flex;
-    gap: 7px;
-    justify-content: space-between;
+    justify-content: space-around;
     font-size: 0.8rem;
+    width: 100%;
   }
   #home #nav .links {
-    margin-right: 5px;
+    margin-right: 0px;
     padding: 20px 5px;
+  }
+  #home .identification {
+    flex-direction: column;
+    align-items: center;
+  }
+  #home .identification #image-1 {
+    width: 250px;
+    margin-left: 0;
+  }
+  #home .identification .paragraphs {
+    font-size: 1.4rem;
+    min-width: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #home .identification .paragraphs .hovered-spans {
+    font-size: 1.5rem;
+  }
+  #home .identification .paragraphs .hovered-spans:hover {
+    font-size: 1.2rem;
   }
 }/*# sourceMappingURL=main.css.map */
