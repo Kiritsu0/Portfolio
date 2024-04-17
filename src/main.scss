@@ -107,13 +107,37 @@ $project-fontsize-before: 1.4rem;
     }
   }
 
-  .language-icons {
-    margin-left: 1rem;
-    max-width: 30rem;
+  & .language-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+
+    & .download {
+      text-decoration: none;
+      background-color: #3badab;
+      color: #eee;
+      font-size: 1.5rem;
+      padding: 0.5em;
+      width: 12rem;
+      display: flex;
+      justify-content: center;
+      margin-left: 1.5em;
+      transition: 1s;
+  
+      &:hover {
+        color: #49696bd3;
+      }
+    }
+
+    & .tools {
+      margin-right: 4em;
+    }
 
     & .programming-tools {
       font-size: 3rem;
-      margin-left: 2rem;
+      margin-right: 1rem;
       cursor: pointer;
       transition: 0.3s;
 
@@ -152,22 +176,6 @@ $project-fontsize-before: 1.4rem;
 
     #next {
       color: #1b1a1a;
-    }
-  }
-  .download {
-    text-decoration: none;
-    background-color: #3badab;
-    color: #eee;
-    font-size: 1.5rem;
-    padding: 0.5em;
-    width: 12rem;
-    display: flex;
-    justify-content: center;
-    margin: 0.7em 0 0 2em;
-    transition: 1s;
-
-    &:hover {
-      color: #49696bd3;
     }
   }
 }
@@ -362,9 +370,11 @@ $project-fontsize-before: 1.4rem;
     align-items: center;
     gap: 2rem;
     flex-wrap: wrap;
+    margin: 0 2rem;
+    padding-bottom: 2rem;
 
     & .project {
-      width: 28%;
+      width: 15rem;
       height: 300px;
       background-color: #eee;
       border-radius: 10px;
@@ -378,7 +388,6 @@ $project-fontsize-before: 1.4rem;
     }
 
     & #project-1 {
-      width: 28%;
       height: 300px;
       position: relative;
 
@@ -408,7 +417,6 @@ $project-fontsize-before: 1.4rem;
     }
 
     & #project-2 {
-      width: 28%;
       height: 300px;
       position: relative;
 
@@ -438,7 +446,6 @@ $project-fontsize-before: 1.4rem;
     }
 
     & #project-3 {
-      width: 28%;
       height: 300px;
       position: relative;
 
@@ -618,7 +625,7 @@ $project-fontsize-before: 1.4rem;
         margin-left: 0;
       }
       & .paragraphs {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         min-width: 480px;
         display: flex;
         flex-direction: column;
@@ -626,11 +633,37 @@ $project-fontsize-before: 1.4rem;
         align-items: center;
 
         & .hovered-spans {
-          font-size: 1.5rem;
+          font-size: 1.8rem;
         }
 
         & .hovered-spans:hover {
-          font-size: 1.2rem;
+          font-size: 1.3rem;
+        }
+      }
+    }
+
+    & .language-icons {
+      flex-direction: column;
+
+      & .download {
+        margin-left: 0;
+        margin-bottom: 2em;
+      }
+
+      & .tools {
+        margin: 0 0 2em 1em
+
+      }
+    }
+  }
+
+  #about {
+    & .header {
+      & .letter {
+        font-size: 2rem;
+
+        &:hover {
+          font-size: 3rem;
         }
       }
     }

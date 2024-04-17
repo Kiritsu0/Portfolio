@@ -66,44 +66,46 @@ function App() {
           <img id="image-1" src={process.env.PUBLIC_URL + "/image-1.jpg"} />
           <div className="paragraphs">
             <p id="p1">Hi,</p>
-            <p id="p2">
+            <div id="p2">
               I'M <p className="hovered-spans">Hussein</p>{" "}
               <p className="hovered-spans">Deeb</p>
-            </p>
-            <p id="p3">
+            </div>
+            <div id="p3">
               a <p className="hovered-spans">Front-End</p>{" "}
               <p className="hovered-spans">Developer</p>
-            </p>
+            </div>
           </div>
         </div>
         <div className="language-icons">
           <a href="/Portfolio/Resume.docx" download className="download">
               Download CV
           </a>
-          <span className="programming-tools" id="next">
-            <TbBrandNextjs />
-          </span>
-          <span className="programming-tools" id="react">
-            <BiLogoReact />
-          </span>
-          <span className="programming-tools" id="js">
-            <BiLogoJavascript />
-          </span>
-          <span className="programming-tools" id="tailwind">
-            <BiLogoTailwindCss />
-          </span>
-          <span className="programming-tools" id="html">
-            <BiLogoHtml5 />
-          </span>
-          <span className="programming-tools" id="css">
-            <BiLogoCss3 />
-          </span>
-          <span className="programming-tools" id="sass">
-            <BiLogoSass />
-          </span>
-          <span className="programming-tools" id="python">
-            <BiLogoPython />
-          </span>
+          <div className="tools">
+            <span className="programming-tools" id="next">
+              <TbBrandNextjs />
+            </span>
+            <span className="programming-tools" id="react">
+              <BiLogoReact />
+            </span>
+            <span className="programming-tools" id="js">
+              <BiLogoJavascript />
+            </span>
+            <span className="programming-tools" id="tailwind">
+              <BiLogoTailwindCss />
+            </span>
+            <span className="programming-tools" id="html">
+              <BiLogoHtml5 />
+            </span>
+            <span className="programming-tools" id="css">
+              <BiLogoCss3 />
+            </span>
+            <span className="programming-tools" id="sass">
+              <BiLogoSass />
+            </span>
+            <span className="programming-tools" id="python">
+              <BiLogoPython />
+            </span>
+          </div>
         </div>
       </div>
 

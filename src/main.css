@@ -91,12 +91,33 @@
   font-size: 2.5rem;
 }
 #home .language-icons {
-  margin-left: 1rem;
-  max-width: 30rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+#home .language-icons .download {
+  text-decoration: none;
+  background-color: #3badab;
+  color: #eee;
+  font-size: 1.5rem;
+  padding: 0.5em;
+  width: 12rem;
+  display: flex;
+  justify-content: center;
+  margin-left: 1.5em;
+  transition: 1s;
+}
+#home .language-icons .download:hover {
+  color: rgba(73, 105, 107, 0.8274509804);
+}
+#home .language-icons .tools {
+  margin-right: 4em;
 }
 #home .language-icons .programming-tools {
   font-size: 3rem;
-  margin-left: 2rem;
+  margin-right: 1rem;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -126,21 +147,6 @@
 }
 #home .language-icons #next {
   color: #1b1a1a;
-}
-#home .download {
-  text-decoration: none;
-  background-color: #3badab;
-  color: #eee;
-  font-size: 1.5rem;
-  padding: 0.5em;
-  width: 12rem;
-  display: flex;
-  justify-content: center;
-  margin: 0.7em 0 0 2em;
-  transition: 1s;
-}
-#home .download:hover {
-  color: rgba(73, 105, 107, 0.8274509804);
 }
 
 #about {
@@ -305,9 +311,11 @@
   align-items: center;
   gap: 2rem;
   flex-wrap: wrap;
+  margin: 0 2rem;
+  padding-bottom: 2rem;
 }
 #projects #projects-list .project {
-  width: 28%;
+  width: 15rem;
   height: 300px;
   background-color: #eee;
   border-radius: 10px;
@@ -319,7 +327,6 @@
   border-radius: 10px 10px 0 0;
 }
 #projects #projects-list #project-1 {
-  width: 28%;
   height: 300px;
   position: relative;
 }
@@ -346,7 +353,6 @@
   opacity: 0;
 }
 #projects #projects-list #project-2 {
-  width: 28%;
   height: 300px;
   position: relative;
 }
@@ -373,7 +379,6 @@
   opacity: 0;
 }
 #projects #projects-list #project-3 {
-  width: 28%;
   height: 300px;
   position: relative;
 }
@@ -523,7 +528,7 @@
     margin-left: 0;
   }
   #home .identification .paragraphs {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     min-width: 480px;
     display: flex;
     flex-direction: column;
@@ -531,9 +536,25 @@
     align-items: center;
   }
   #home .identification .paragraphs .hovered-spans {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
   #home .identification .paragraphs .hovered-spans:hover {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+  }
+  #home .language-icons {
+    flex-direction: column;
+  }
+  #home .language-icons .download {
+    margin-left: 0;
+    margin-bottom: 2em;
+  }
+  #home .language-icons .tools {
+    margin: 0 0 2em 1em;
+  }
+  #about .header .letter {
+    font-size: 2rem;
+  }
+  #about .header .letter:hover {
+    font-size: 3rem;
   }
 }/*# sourceMappingURL=main.css.map */
