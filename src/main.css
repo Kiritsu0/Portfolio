@@ -95,7 +95,7 @@
   justify-content: space-between;
   align-items: center;
   gap: 1.5rem;
-  margin-top: 2rem;
+  margin-top: 5rem;
 }
 #home .language-icons .download {
   text-decoration: none;
@@ -106,7 +106,7 @@
   width: 12rem;
   display: flex;
   justify-content: center;
-  margin-left: 1.5em;
+  margin-left: 3.5em;
   transition: 1s;
 }
 #home .language-icons .download:hover {
@@ -317,8 +317,30 @@
 #projects #projects-list .project {
   width: 15rem;
   height: 300px;
+  position: relative;
   background-color: #eee;
   border-radius: 10px;
+}
+#projects #projects-list .project::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: 800;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #3badab, rgba(73, 105, 107, 0.8274509804));
+  transition: 0.3s;
+  border-radius: 10px;
+}
+#projects #projects-list .project:hover::before {
+  background-color: transparent;
+  width: 0;
+  overflow: hidden;
+  opacity: 0;
 }
 #projects #projects-list .project .images {
   width: 100%;
@@ -326,83 +348,17 @@
   cursor: pointer;
   border-radius: 10px 10px 0 0;
 }
-#projects #projects-list #project-1 {
-  height: 300px;
-  position: relative;
-}
 #projects #projects-list #project-1::before {
-  content: "Weather App";
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.4rem;
-  font-weight: 800;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to right, #3badab, rgba(73, 105, 107, 0.8274509804));
-  transition: 0.3s;
-  border-radius: 10px;
-}
-#projects #projects-list #project-1:hover::before {
-  background-color: transparent;
-  width: 0;
-  overflow: hidden;
-  opacity: 0;
-}
-#projects #projects-list #project-2 {
-  height: 300px;
-  position: relative;
+  content: "Facebook Clone";
 }
 #projects #projects-list #project-2::before {
-  content: "Test App";
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.4rem;
-  font-weight: 800;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to right, #3badab, rgba(73, 105, 107, 0.8274509804));
-  transition: 0.3s;
-  border-radius: 10px;
-}
-#projects #projects-list #project-2:hover::before {
-  background-color: transparent;
-  width: 0;
-  overflow: hidden;
-  opacity: 0;
-}
-#projects #projects-list #project-3 {
-  height: 300px;
-  position: relative;
+  content: "Weather App";
 }
 #projects #projects-list #project-3::before {
-  content: "Drum Machine";
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.4rem;
-  font-weight: 800;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to right, #3badab, rgba(73, 105, 107, 0.8274509804));
-  transition: 0.3s;
-  border-radius: 10px;
+  content: "Test App";
 }
-#projects #projects-list #project-3:hover::before {
-  background-color: transparent;
-  width: 0;
-  overflow: hidden;
-  opacity: 0;
+#projects #projects-list #project-4::before {
+  content: "Drum Machine";
 }
 #projects #projects-list .github-icon {
   display: flex;
@@ -463,13 +419,14 @@
   margin-top: 7rem;
   align-self: flex-end;
 }
-#contacts #media {
+#contacts .icons .media {
   font-size: 2rem;
-  margin: 0 2.5rem 0 2.5rem;
+  margin: 0 2.5rem;
   cursor: pointer;
   transition: 0.3s;
+  color: #3badab;
 }
-#contacts #media:hover {
+#contacts .icons .media:hover {
   color: #eee;
 }
 
@@ -543,6 +500,7 @@
   }
   #home .language-icons {
     flex-direction: column;
+    margin-top: 2rem;
   }
   #home .language-icons .download {
     margin-left: 0;
@@ -556,5 +514,22 @@
   }
   #about .header .letter:hover {
     font-size: 3rem;
+  }
+  #contacts h1 {
+    font-size: 2rem;
+  }
+  #contacts .my-contact {
+    font-size: 1rem;
+    margin-left: 4rem;
+  }
+  #contacts .contact-icons {
+    font-size: 2rem;
+  }
+  #contacts .icons {
+    margin-top: 4rem;
+    align-self: center;
+  }
+  #contacts .icons .media {
+    margin: 0 1.5rem;
   }
 }/*# sourceMappingURL=main.css.map */

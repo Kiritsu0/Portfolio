@@ -279,6 +279,28 @@ function App() {
         <h1>Projects</h1>
         <div id="projects-list">
           <div className="project" id="project-1">
+              <a
+                href="https://facebook-clone0.netlify.app"
+                target="_blank"
+              >
+                <img
+                  className="images"
+                  id="drum-image"
+                  src={process.env.PUBLIC_URL + "/Facebook_Clone.png"}
+                  alt="Facebook Clone"
+                ></img>
+              </a>
+              <a
+                className="github-icon"
+                href="https://github.com/Kiritsu0/Facebook-Clone"
+                target="_blank"
+              >
+                <span>
+                  <FaGithub />
+                </span>
+              </a>
+          </div>
+          <div className="project" id="project-2">
             <a
               href="https://kiritsu0.github.io/React-Weather-App/"
               target="_blank"
@@ -287,7 +309,7 @@ function App() {
                 className="images"
                 id="weather-image"
                 src={process.env.PUBLIC_URL + "/weather_project.png"}
-                alt="weather project"
+                alt="Weather"
               ></img>
             </a>
             <a
@@ -300,7 +322,7 @@ function App() {
               </span>
             </a>
           </div>
-          <div className="project" id="project-2">
+          <div className="project" id="project-3">
             <a
               href="https://kiritsu0.github.io/React-Quiz-App/"
               target="_blank"
@@ -309,7 +331,7 @@ function App() {
                 className="images"
                 id="test-image"
                 src={process.env.PUBLIC_URL + "/test_project.png"}
-                alt="test project"
+                alt="Test"
               ></img>
             </a>
             <a
@@ -322,7 +344,7 @@ function App() {
               </span>
             </a>
           </div>
-          <div className="project" id="project-3">
+          <div className="project" id="project-4">
             <a
               href="https://kiritsu0.github.io/React-Drum-Machine/"
               target="_blank"
@@ -331,7 +353,7 @@ function App() {
                 className="images"
                 id="drum-image"
                 src={process.env.PUBLIC_URL + "/drum_project.png"}
-                alt="drum machine project"
+                alt="Drum Machine"
               ></img>
             </a>
             <a
@@ -344,6 +366,7 @@ function App() {
               </span>
             </a>
           </div>
+          
         </div>
       </div>
 
@@ -366,24 +389,21 @@ function App() {
         <div className="icons">
           <a
             href="https://github.com/Kiritsu0"
-            className="contact-icons"
-            id="media"
+            className="media"
             target="_blank"
           >
             <FaGithub />
           </a>
           <a
             href="https://www.linkedin.com/in/hussein-deeb0/"
-            className="contact-icons"
-            id="media"
+            className="media"
             target="_blank"
           >
             <FaLinkedin />
           </a>
           <a
             href="https://twitter.com/KIRITSU295053"
-            className="contact-icons"
-            id="media"
+            className="media"
             target="_blank"
           >
             <FaSquareXTwitter />
