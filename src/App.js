@@ -280,7 +280,7 @@ function App() {
         <div id="projects-list">
           <div className="project" id="project-1">
               <a
-                href="https://facebook-clone0.netlify.app"
+                href="https://social-clone0.netlify.app/"
                 target="_blank"
               >
                 <img
