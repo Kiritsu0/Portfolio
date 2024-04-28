@@ -65,7 +65,7 @@ $project-fontsize-before: 1.4rem;
   & .identification {
     display: flex;
     justify-content: space-between;
-    gap: 3rem;
+    gap: 2rem;
     align-items: center;
     padding-top: 9rem;
     color: #eee;
@@ -79,9 +79,9 @@ $project-fontsize-before: 1.4rem;
     & .paragraphs {
       text-align: start;
       font-family: Elephant;
-      min-width: 680px;
       font-size: 2.3rem;
       line-height: 4.3rem;
+      margin-right: 1rem;
 
       & #p2 {
         margin-left: 2rem;
@@ -517,7 +517,6 @@ $project-fontsize-before: 1.4rem;
     }
   }
 
-  
 }
 
 @media (max-width: 1024px) {
@@ -534,11 +533,10 @@ $project-fontsize-before: 1.4rem;
     }
 
     & .identification {
-      gap: 2rem;
+      gap: 1rem;
       & .paragraphs {
         font-size: 1.8rem;
         line-height: 3.3rem;
-        min-width: 580px;
 
         & #p2 {
           margin-left: 0;
@@ -556,6 +554,19 @@ $project-fontsize-before: 1.4rem;
           font-size: 2rem;
         }
       }
+    }
+
+    & .language-icons {
+      & .download {
+        margin-left: 3em;
+      }
+    }
+  }
+
+  #contacts {
+    & .icons {
+      margin-top: 4rem;
+      align-self: center;
     }
   }
 }
@@ -592,7 +603,6 @@ $project-fontsize-before: 1.4rem;
       }
       & .paragraphs {
         font-size: 1.6rem;
-        min-width: 480px;
         display: flex;
         flex-direction: column;
         justify-content: center;

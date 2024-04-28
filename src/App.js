@@ -63,7 +63,7 @@ function App() {
           </div>
         </nav>
         <div className="identification">
-          <img id="image-1" src={process.env.PUBLIC_URL + "/image-1.jpg"} />
+          <img id="image-1" src={process.env.PUBLIC_URL + "/image-1.jpg"} alt="office" />
           <div className="paragraphs">
             <p id="p1">Hi,</p>
             <div id="p2">
@@ -281,6 +281,7 @@ function App() {
           <div className="project" id="project-1">
               <a
                 href="https://social-clone0.netlify.app/"
+                rel="noreferrer"
                 target="_blank"
               >
                 <img
@@ -293,6 +294,7 @@ function App() {
               <a
                 className="github-icon"
                 href="https://github.com/Kiritsu0/Facebook-Clone"
+                rel="noreferrer"
                 target="_blank"
               >
                 <span>
@@ -303,6 +305,7 @@ function App() {
           <div className="project" id="project-2">
             <a
               href="https://kiritsu0.github.io/React-Weather-App/"
+              rel="noreferrer"
               target="_blank"
             >
               <img
@@ -315,6 +318,7 @@ function App() {
             <a
               className="github-icon"
               href="https://github.com/Kiritsu0/React-Weather-App"
+              rel="noreferrer"
               target="_blank"
             >
               <span>
@@ -325,6 +329,7 @@ function App() {
           <div className="project" id="project-3">
             <a
               href="https://kiritsu0.github.io/React-Quiz-App/"
+              rel="noreferrer"
               target="_blank"
             >
               <img
@@ -337,6 +342,7 @@ function App() {
             <a
               className="github-icon"
               href="https://github.com/Kiritsu0/React-Quiz-App"
+              rel="noreferrer"
               target="_blank"
             >
               <span>
@@ -347,6 +353,7 @@ function App() {
           <div className="project" id="project-4">
             <a
               href="https://kiritsu0.github.io/React-Drum-Machine/"
+              rel="noreferrer"
               target="_blank"
             >
               <img
@@ -359,6 +366,7 @@ function App() {
             <a
               className="github-icon"
               href="https://github.com/Kiritsu0/React-Drum-Machine"
+              rel="noreferrer"
               target="_blank"
             >
               <span>
@@ -390,6 +398,7 @@ function App() {
           <a
             href="https://github.com/Kiritsu0"
             className="media"
+            rel="noreferrer"
             target="_blank"
           >
             <FaGithub />
@@ -397,6 +406,7 @@ function App() {
           <a
             href="https://www.linkedin.com/in/hussein-deeb0/"
             className="media"
+            rel="noreferrer"
             target="_blank"
           >
             <FaLinkedin />
@@ -404,6 +414,7 @@ function App() {
           <a
             href="https://twitter.com/KIRITSU295053"
             className="media"
+            rel="noreferrer"
             target="_blank"
           >
             <FaSquareXTwitter />

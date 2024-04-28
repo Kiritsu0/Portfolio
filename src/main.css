@@ -55,7 +55,7 @@
 #home .identification {
   display: flex;
   justify-content: space-between;
-  gap: 3rem;
+  gap: 2rem;
   align-items: center;
   padding-top: 9rem;
   color: #eee;
@@ -68,9 +68,9 @@
 #home .identification .paragraphs {
   text-align: start;
   font-family: Elephant;
-  min-width: 680px;
   font-size: 2.3rem;
   line-height: 4.3rem;
+  margin-right: 1rem;
 }
 #home .identification .paragraphs #p2 {
   margin-left: 2rem;
@@ -439,12 +439,11 @@
     margin-right: 2px;
   }
   #home .identification {
-    gap: 2rem;
+    gap: 1rem;
   }
   #home .identification .paragraphs {
     font-size: 1.8rem;
     line-height: 3.3rem;
-    min-width: 580px;
   }
   #home .identification .paragraphs #p2 {
     margin-left: 0;
@@ -457,6 +456,13 @@
   }
   #home .identification .paragraphs .hovered-spans:hover {
     font-size: 2rem;
+  }
+  #home .language-icons .download {
+    margin-left: 3em;
+  }
+  #contacts .icons {
+    margin-top: 4rem;
+    align-self: center;
   }
 }
 @media (max-width: 768px) {
@@ -486,7 +492,6 @@
   }
   #home .identification .paragraphs {
     font-size: 1.6rem;
-    min-width: 480px;
     display: flex;
     flex-direction: column;
     justify-content: center;
